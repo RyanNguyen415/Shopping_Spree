@@ -15,7 +15,7 @@ const ProductPage = () => {
       });
     dispatch(setProducts(response.data));
   };
-
+ 
   useEffect(() => {
     fetchProducts();
   }, []);

@@ -16,7 +16,7 @@ const ProductDetails = () => {
       .get(`https://fakestoreapi.com/products/${id}`)
       .catch((err) => {
         console.log("Err: ", err);
-      });
+      });  
     dispatch(selectedProduct(response.data));
   };
 
